@@ -60,7 +60,7 @@ body {
   height: 100%;
 }
 
-@media (min-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: fullscreen) {
   .back-video {
     width: 100%;
     height: auto;
