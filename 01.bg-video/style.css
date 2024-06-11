@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+body {
+  height: 100%;
+}
 
 .hero {
   width: 100%;
@@ -11,9 +14,9 @@
   background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
   position: relative;
   padding: 0 5%;
-  display: flex;
+  display: inline-block;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 .content {
@@ -21,8 +24,8 @@
 }
 
 .content h1 {
-  margin-top: 30%;
-  font-size: 160px;
+  margin-top: 27%;
+  font-size: 100px;
   color: #fff;
   font-weight: 600;
   transition: 0.5s;
@@ -35,11 +38,11 @@
 
 .content a {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 22px;
   color: #fff;
   border: 2px solid white;
-  padding: 14px;
-  margin: 20px;
+  padding: 10px;
+  margin: 30px;
   transition: 0.5s;
 }
 
@@ -54,9 +57,10 @@
   right: 0;
   bottom: 0;
   z-index: -1;
+  height: 100%;
 }
 
-@media (min-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: :fullscreen) {
   .back-video {
     width: 100%;
     height: auto;
